@@ -28,35 +28,13 @@ function App() {
         value={inputs.nombre || ""}
         onChange={handleChange}
         />
-      /cami
+      ###Cami agrega tus codigos
+    tu campo es cliente
 
 
 
 
-
-      
-      /Juanjo
-
-
-
-
-
-
-      /Ara
-
-
-
-
-
-    /dani
-
-
-
-
-
-
-
-
+    
       </label>
       <button className="btn-success" type="submit">Pedir</button>
     </form>          
