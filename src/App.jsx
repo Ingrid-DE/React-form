@@ -34,7 +34,16 @@ function App() {
 
 
 
+
     
+    ###juanjo agrega tus codigos
+    tu campo es tipo de ramo
+
+
+
+
+
+
       </label>
       <button className="btn-success" type="submit">Pedir</button>
     </form>          
