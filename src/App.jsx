@@ -11,7 +11,7 @@ function App() {
   
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert( `Tu pedido fue guardado como: ${JSON.stringify(inputs)}`);
+    alert( `Tu compra fue guardado como: ${JSON.stringify(inputs)}`);
     console.log(inputs);
   } 
   
@@ -21,22 +21,16 @@ function App() {
         <div className="col-2">
           <form onSubmit={handleSubmit}>
       <div class="card-body bg-danger text-white">Floreria Rojas </div>
-      <label>Cliente:
+      <label>Comprador:
       <input
         type="text"
         name="nombre"
         value={inputs.nombre || ""}
         onChange={handleChange}
         />
-      ###Cami agrega tus codigos
-    tu campo es cliente
 
-
-
-
-    
       </label>
-      <button className="btn-success" type="submit">Pedir</button>
+      <button className="btn-success" type="submit">Comprar</button>
     </form>          
         </div>
       </div>
