@@ -28,9 +28,24 @@ function App() {
         value={inputs.nombre || ""}
         onChange={handleChange}
         />
+      ###Cami agrega tus codigos
+    tu campo es cliente
+
+
+
+
+
+    
+    ###juanjo agrega tus codigos
+    tu campo es tipo de ramo
+
+
+
+
+
 
       </label>
-      <button className="btn-success" type="submit">Comprar</button>
+      <button className="btn-success" type="submit">Pedir</button>
     </form>          
         </div>
       </div>
