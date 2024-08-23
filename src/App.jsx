@@ -21,7 +21,7 @@ function App() {
         <div className="col-2">
           <form onSubmit={handleSubmit}>
       <div class="card-body bg-danger text-white">Floreria Rojas </div>
-      <label>Comprador:
+      <label>Precio:
       <input
   type="number" 
   name="precios"
