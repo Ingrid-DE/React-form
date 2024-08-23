@@ -28,9 +28,16 @@ function App() {
         value={inputs.nombre || ""}
         onChange={handleChange}
         />
-
       </label>
-      <button className="btn-success" type="submit">Comprar</button>
+      <label>Tipo de ramo:
+      <input
+        type="text"
+        name="tiporamo"
+        value={inputs.tiporamo || ""}
+        onChange={handleChange}
+        />
+      </label>
+      <button className="btn-success" type="submit">comprar</button>
     </form>          
         </div>
       </div>
@@ -38,4 +45,4 @@ function App() {
         );
       }
       
-      export default App;
+      export default App; 
