@@ -1,4 +1,5 @@
-import { useState } from "react"; 
+import { useState } from "react";
+
 function App() {
   
   const [inputs, setInputs] = useState({});
@@ -20,29 +21,38 @@ function App() {
       <div className="row">
         <div className="col-2">
           <form onSubmit={handleSubmit}>
-      <div class="card-body bg-danger text-white">Floreria Rojas </div>
-      <label>Comprador:
-      <input
-        type="text"
-        name="nombre"
-        value={inputs.nombre || ""}
-        onChange={handleChange}
-        />
-      </label>
-      <label>Tipo de ramo:
-      <input
-        type="text"
-        name="tiporamo"
-        value={inputs.tiporamo || ""}
-        onChange={handleChange}
-        />
-      </label>
-      <button className="btn-success" type="submit">comprar</button>
-    </form>          
+            <div class="card-body bg-danger text-white">Floreria Rojas </div>
+            <label>Comprador:
+            <input
+              type="text"
+              name="nombre"
+              value={inputs.nombre || ""}
+              onChange={handleChange}
+              />
+            </label>
+            <label>Tipo de ramo:
+            <input
+              type="text"
+              name="tiporamo"
+              value={inputs.tiporamo || ""}
+              onChange={handleChange}
+              />
+            </label>
+            <label>Precios
+            <input 
+              type="number" 
+              name="precios"
+              value={inputs.precios || ""}
+              onchange={handleChange}
+              />
+            </label>
+            <button className="btn-success" type="submit">comprar</button>
+          </form>          
         </div>
       </div>
     </div>
-        );
-      }
+  );
+}
       
-      export default App;
+export default App;
+
