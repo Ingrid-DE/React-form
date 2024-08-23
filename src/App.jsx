@@ -28,6 +28,7 @@ function App() {
         value={inputs.nombre || ""}
         onChange={handleChange}
         />
+
       </label>
       <button className="btn-success" type="submit">Comprar</button>
     </form>          
@@ -37,4 +38,4 @@ function App() {
         );
       }
       
-      export default App;
+      export default App; 
