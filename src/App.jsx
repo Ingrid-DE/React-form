@@ -1,4 +1,5 @@
-import { useState } from "react"; 
+import { useState } from "react";
+
 function App() {
   
   const [inputs, setInputs] = useState({});
@@ -11,7 +12,7 @@ function App() {
   
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert( `Tu pedido fue guardado como: ${JSON.stringify(inputs)}`);
+    alert( `Tu compra fue guardado como: ${JSON.stringify(inputs)}`);
     console.log(inputs);
   } 
   
@@ -20,48 +21,38 @@ function App() {
       <div className="row">
         <div className="col-2">
           <form onSubmit={handleSubmit}>
-      <div class="card-body bg-danger text-white">Floreria Rojas </div>
-      <label>Cliente:
-      <input
-        type="text"
-        name="nombre"
-        value={inputs.nombre || ""}
-        onChange={handleChange}
-        />
-      ###Cami agrega tus codigos
-    tu campo es cliente
-
-
-
-
-
-    
-    ###juanjo agrega tus codigos
-    tu campo es tipo de ramo
-
-
-
-
-
-
-    ###ara agrega tus codigos
-    tu campo es precio
-
-
-
-
-
-    
-
-    ###dani agrega tus codigos
-    tu campo es direccion de envio
-      </label>
-      <button className="btn-success" type="submit">Pedir</button>
-    </form>          
+            <div class="card-body bg-danger text-white">Floreria Rojas </div>
+            <label>Comprador:
+            <input
+              type="text"
+              name="nombre"
+              value={inputs.nombre || ""}
+              onChange={handleChange}
+              />
+            </label>
+            <label>Tipo de ramo:
+            <input
+              type="text"
+              name="tiporamo"
+              value={inputs.tiporamo || ""}
+              onChange={handleChange}
+              />
+            </label>
+            <label>Precios
+            <input 
+              type="number" 
+              name="precios"
+              value={inputs.precios || ""}
+              onchange={handleChange}
+              />
+            </label>
+            <button className="btn-success" type="submit">comprar</button>
+          </form>          
         </div>
       </div>
     </div>
-        );
-      }
+  );
+}
       
-      export default App;
+export default App;
+
