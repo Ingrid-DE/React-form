@@ -38,13 +38,21 @@ function App() {
               onChange={handleChange}
               />
             </label>
-            <label>Precios
+            <label>Precios:
             <input 
               type="number" 
               name="precios"
               value={inputs.precios || ""}
-              onchange={handleChange}
+              onChange={handleChange}
               />
+            </label>
+            <label>Direccion de envio:
+              <input
+                type="text"
+                name="direccion"
+                value={inputs.direccion || ""}
+                onChange={handleChange}
+                />
             </label>
             <button className="btn-success" type="submit">comprar</button>
           </form>          
