@@ -47,6 +47,14 @@ function App() {
               />
             </label>
             <button className="btn-success" type="submit">comprar</button>
+            <label>Direccion de envio:
+              <input
+                type="text"
+                name="direccion"
+                value={inputs.direccion || ""}
+                onChange={handleChange}
+                />
+            </label>
           </form>          
         </div>
       </div>
